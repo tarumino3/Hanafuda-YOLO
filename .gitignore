@@ -1,0 +1,38 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# YOLO / 機械学習関連
+runs/
+yolov11n.pt
+*.pt
+*.pth
+*.onnx
+!models/best.pt 
+
+# データセット関連
+datasets/
+images/
+labels/
+
+# OSの一時ファイル
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# WandB
+wandb/
+
+# ログ
+*.log
+logs/
+
+# モデルの重み（models/ディレクトリの構造は保持、重みは除外）
+models/*.onnx
